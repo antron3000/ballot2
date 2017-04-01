@@ -1,0 +1,52 @@
+paul@PaulUbuntu14:~$ cd contracts
+paul@PaulUbuntu14:~/contracts$ ls
+ballot.js
+paul@PaulUbuntu14:~/contracts$ nano README.md
+paul@PaulUbuntu14:~/contracts$ ls
+ballot.js  README.md
+paul@PaulUbuntu14:~/contracts$ git init
+Initialized empty Git repository in /home/paul/contracts/.git/
+paul@PaulUbuntu14:~/contracts$ git add .
+paul@PaulUbuntu14:~/contracts$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   README.md
+	new file:   ballot.js
+
+paul@PaulUbuntu14:~/contracts$ git commit
+[master (root-commit) 9a533f8] first commit
+ Committer: paul <paul@PaulUbuntu14.04>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 1 insertion(+)
+ create mode 100644 README.md
+ create mode 100644 ballot.js
+paul@PaulUbuntu14:~/contracts$ git config --global user.name "antron3000"
+paul@PaulUbuntu14:~/contracts$ git config --global user.email "fortyonepointsix@gmail.com"
+paul@PaulUbuntu14:~/contracts$ git remote add origin https://github.com/antron3000/ballot2.git
+paul@PaulUbuntu14:~/contracts$ git push -u origin master
+Username for 'https://github.com': antron3000
+Password for 'https://antron3000@github.com':
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 259 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/antron3000/ballot2.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+paul@PaulUbuntu14:~/contracts$
